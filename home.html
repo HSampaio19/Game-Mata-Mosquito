@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>--Mata Mosquito--</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<script src="jogo.js" type="text/javascript"></script>
+</head>
+<body onresize="corrigirTela()">
+	<div>		
+		<img src="imagens/game.png">
+		<!--<h1 style="color: white; background-color: red ; border-radius: 10px; width: 250; border-style: double;">Digite o seu nome:</h1>
+		<input type="" name="" placeholder="Nome" >-->
+		<select id="nivel">
+			<option value ="0">-- Selecione o Nível --</option>
+			<option value="2000">Fácil</option>
+			<option value="1000">Médio</option>
+			<option value="750">Chuck Norris</option>
+		</select>
+		<button onmouseleave="changeColor('start','#ff4747')" onmouseover="changeColor('start','red')" onclick="definirNivel()" id="start">Iniciar Jogo</button>		
+	</div>
+	<script type="text/javascript">
+		
+
+		function definirNivel(){
+			var n
+			n = document.getElementById('nivel').value
+			if (n == 0){
+				alert('Selecione um nivel para iniciar')
+			}else{
+				window.location.href='jogo.html?' + n
+			}
+
+		}
+	</script>
+	
+</body>
+</html>

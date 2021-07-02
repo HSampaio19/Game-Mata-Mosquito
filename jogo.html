@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>--Mata Mosquito--</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<script src='jogo.js' type="text/javascript"></script>
+</head>
+<body >
+	<div id="menu_esquerdo" class="menu_esquerdo">
+		<div class="coracoes_cheios">
+			<img class="coracoes" src="imagens/coracao_cheio.png" id="coracao1">
+			<img class="coracoes" src="imagens/coracao_cheio.png" id="coracao2">
+			<img class="coracoes" src="imagens/coracao_cheio.png" id="coracao3">	
+		</div>
+		<div class="coracoes_vazios">
+			<img class="coracoes" src="imagens/coracao_vazio.png">
+			<img class="coracoes" src="imagens/coracao_vazio.png">
+			<img class="coracoes" src="imagens/coracao_vazio.png">		
+		</div>	
+		<h1>Pontuaçao:</h1>
+		<h1 id="pontos">0</h1>
+	</div>
+	<div id="tela_jogo">
+		<img onclick="acao()" src="imagens/mosca.png" id="mosca">
+		<button onmouseleave="changeColor('iniciar_jogo','green')" onmouseover="changeColor('iniciar_jogo' , '#006600')" onclick="cronometro() , ocultarBotao(), acao()" id="iniciar_jogo" class="iniciar_jogo" >START</button>
+	</div>
+	<div id="menu_direito" class="menu_direito">
+		<h1 id="cronometro">60</h1>
+	</div>
+
+</body>
+</html>
